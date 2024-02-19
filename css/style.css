@@ -14,6 +14,16 @@
   color: #11111191;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.blog-btn{
+  color: white;
+  font-size: 20px;
+  height: 48px;
+  width: 120px;
+  font-weight: bold;
+  background-color: #1090D8;
+  border: none;
+  border-radius: 30px;
+}
 
 /* Cards style part */
 .card-container{
