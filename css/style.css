@@ -1,4 +1,13 @@
 /* Header style part */
+.header-container{
+  display: flex;
+  background-color: #e0ecf4;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  margin: 2rem;
+  border-radius: 6px;
+}
 .header-title{
   font-size: 45px;
   font-weight: 200;
