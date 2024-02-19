@@ -1,3 +1,21 @@
+/* Header style part */
+.header-title{
+  font-size: 45px;
+  font-weight: 200;
+  text-align: left;
+  color: #111111ca;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  height: 20px;
+}
+.header-subtitle{
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: left;
+  color: #11111191;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Cards style part */
 .card-container{
   display: flex;
   flex-direction: row-reverse;
