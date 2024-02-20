@@ -1,3 +1,13 @@
+// adding calculation ans in area calculation section
+function setAreaOfShapes(shapeName,areaOfShape){
+  const calculationContainer = document.getElementById("calculation-container");
+  const p = document.createElement('p');
+  p.innerText = shapeName;
+  p.insertAdjacentText('beforeend',' ');
+  p.insertAdjacentText('beforeend',areaOfShape);
+  calculationContainer.appendChild(p);
+}
+
 // 1. Finding area calculation by pressing "Calculator" Button
 function getInputFieldValueById(inputId) {
   const inputField = document.getElementById(inputId);
@@ -6,12 +16,13 @@ function getInputFieldValueById(inputId) {
   inputField.value = "";
   return inputFieldValue;
 }
+
 // Area of Triangle
 document.getElementById("triangle").addEventListener("click", function () {
   const triangleFirstValue = getInputFieldValueById("triangle-first-value");
   const triangleSecValue = getInputFieldValueById("triangle-sec-value");
   const areaOfTriangle = 0.5 * triangleFirstValue * triangleSecValue;
-  console.log("Area of Triangle", areaOfTriangle);
+  setAreaOfShapes("Triangle",areaOfTriangle);
 });
 
 // Area of Rectangle
@@ -19,7 +30,7 @@ document.getElementById("rectangle").addEventListener("click", function () {
   const rectangleFirstValue = getInputFieldValueById("rectangle-first-value");
   const rectangleSecValue = getInputFieldValueById("rectangle-sec-value");
   const areaOfRectangle = rectangleFirstValue * rectangleSecValue;
-  console.log("Area of Rectangle", areaOfRectangle);
+  setAreaOfShapes("Rectangle",areaOfRectangle);
 });
 
 // Area of Parallelogram
@@ -31,7 +42,7 @@ document.getElementById("parallelogram").addEventListener("click", function () {
     "parallelogram-sec-value"
   );
   const areaOfParallelogram = parallelogramFirstValue * parallelogramSecValue;
-  console.log("Area of Parallelogram", areaOfParallelogram);
+  setAreaOfShapes("Parallelogram",areaOfParallelogram);
 });
 
 // Area of Rhombus
@@ -57,3 +68,4 @@ document.getElementById("ellipse").addEventListener("click", function () {
     const areaOfEllipse = 3.1416 * a * b;
     console.log("Area of Ellipse", areaOfEllipse);
   });
+
